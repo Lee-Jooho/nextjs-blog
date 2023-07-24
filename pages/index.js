@@ -2,13 +2,12 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
-import Date from './components/date';
+// import Date from './components/date';
 
 import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
-  console.log(allPostsData)
   return {
     props: {
       allPostsData,
@@ -139,7 +138,8 @@ export default function Home({allPostsData}) {
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={'2020-01-01'} />
+                {/* <Date dateString={'2020-01-01'} /> */}
+                return <time dateTime={date}>{format(parseISO(date), 'LLLL d, yyyy')}</time>;
               </small>
             </li>
           ))}
