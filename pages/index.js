@@ -8,6 +8,7 @@ import { getSortedPostsData } from '../lib/posts';
 
 export async function getStaticProps() {
   const allPostsData = await getSortedPostsData();
+  console.log(allPostsData)
   return {
     props: {
       allPostsData,
@@ -138,7 +139,7 @@ export default function Home({allPostsData}) {
               <Link href={`/posts/${id}`}>{title}</Link>
               <br />
               <small className={utilStyles.lightText}>
-                <Date dateString={date} />
+                <Date dateString={date ?? '2020-01-01'} />
               </small>
             </li>
           ))}
