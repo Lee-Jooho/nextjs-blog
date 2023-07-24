@@ -1,6 +1,6 @@
-import Layout from '../components/MyInfoLayout'
+import Layout from '../../components/MyInfoLayout'
 import { getAllPostIds, getPostData } from '../../lib/posts';
-import Date from '../components/date';
+import Date from '../../components/date';
 import utilStyles from '../../styles/utils.module.css';
 import Head from 'next/head';
 

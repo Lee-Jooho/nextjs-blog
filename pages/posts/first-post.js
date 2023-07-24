@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import ImageComponent from '../components/ImageComponent';
-import ScriptComponent from '../components/ScriptComponent';
-import LayoutComponent from '../components/LayoutComponent';
+import ImageComponent from '../../components/ImageComponent';
+import ScriptComponent from '../../components/ScriptComponent';
+import LayoutComponent from '../../components/LayoutComponent';
 import styles from '../../styles/components/layout.module.css';
 
 export default function FirstPost() {

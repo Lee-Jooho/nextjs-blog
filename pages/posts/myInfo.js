@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/MyInfoLayout';
+import Layout, { siteTitle } from '../../components/MyInfoLayout';
 import utilStyles from '/styles/utils.module.css';
 
 export default function Home() {
