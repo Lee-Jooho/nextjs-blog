@@ -5,6 +5,7 @@ import utilStyles from '/styles/utils.module.css';
 export default function Home() {
   return (
     <Layout home>
+      <h3>myInfo.js</h3>
       <Head>
         <title>{siteTitle}</title>
       </Head>

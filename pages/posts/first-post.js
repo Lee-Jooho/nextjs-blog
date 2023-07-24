@@ -15,6 +15,7 @@ export default function FirstPost() {
     return(
         <>
             <LayoutComponent className={styles.container}>
+                <h3>LayoutComponent (  first -post )</h3>
                 <Head>
                     <title>First Post</title>
                 </Head>
