@@ -4,7 +4,7 @@ const ScriptComponent = ({src, strategy, onLoadFunc}) => {
     return (
         <Script
         src={src}
-        strategy={strategy ?? "lazyOnload"}
+        strategy={strategy ? strategy : "lazyOnload"}
         onLoad={() =>
             onLoadFunc
         }

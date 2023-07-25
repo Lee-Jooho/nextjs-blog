@@ -4,9 +4,9 @@ const ImageComponent = ({fileName , height , width , altName}) => {
     return(
         <Image
             src={'/images/' + fileName}
-            height={height ?? 144}
-            width={width ?? 144}
-            alt={altName ?? "image name"}
+            height={height ? height : 144}
+            width={width ? width : 144}
+            alt={altName ? altName : "image name"}
         />
     )
 }
